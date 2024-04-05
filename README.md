@@ -1,2 +1,2 @@
 # Booktobia
-<img src="/Booktobia/Home Page.jpg">
+![Alt Text](Home Page.jpg)
