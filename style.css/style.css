@@ -23,10 +23,9 @@ nav p{
     z-index: 50px;
 
     &:hover{
-        box-shadow: 0px 0px 10px 10px rgba(0,0,0,3);
-        padding-top: 7px;
-        padding-bottom: 7px;
-
+        box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.7);
+        padding-top: 6px;
+        padding-bottom: 6px;
     }
 
 }
@@ -56,12 +55,12 @@ h1{
     text-shadow:  0px 5px 10px rgba(0, 0, 0, 0.9); ;
 }
 
-.Login,
-.Sign{
+
+.Button .Login {
     cursor: pointer;
     position: absolute;
-    
-    padding: 5px 10px;
+    text-decoration: none;
+    padding: 5px 15px;
     box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
     border-radius: 20px;
     color: black;
@@ -74,13 +73,33 @@ h1{
         padding-top: 6px;
         padding-bottom: 5px;
     }
+
+    right: 150px;
+    top: 40px;
 }
-.Login{
-    left: 1270px;
+
+.SignUP{
+    cursor: pointer;
+    position: absolute;
+    text-decoration: none;
+    padding: 4px 10px;
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    color: black;
+    background-color: #ff0000;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 900;
+    font-style: italic;
+    &:hover{
+        box-shadow: 0px 0px 10px 10px rgba(0,0,0,3);
+        padding-top: 6px;
+        padding-bottom: 5px;
+    }
+    right: 40px;
+    top: 40px;
 }
-.Sign{
-    left: 1360px;
-}
+
+
 
 .top-buttom{
     box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
@@ -100,6 +119,9 @@ h1{
 }
 
 .Books .Book1,.Book2{
+    &:hover{
+        box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.6) ;
+    }
     & h1{
         font-family:"IBM Plex Serif", serif;
         font-weight: 700;
@@ -112,9 +134,9 @@ h1{
         1px 1px 0 #000;;
         z-index: -1;
         position: absolute;
-
-        
     }
+
+
     & .descibtion{
         &::first-letter{
             font-size: 50px;
@@ -149,6 +171,7 @@ h1{
 
         box-shadow:0px 0px 40px 2px rgba(0, 132, 255, 0.5) ;
     }
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
 
 }
 .Book1{
@@ -221,4 +244,115 @@ h1{
         left: 20px;
         bottom: 20px;
     }
+}
+
+
+
+.Login-body{
+    background-image: url("../LoginWall.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 1920px 1080px;
+    background-position: center;
+    background-repeat: no-repeat;    
+    min-height: 10px;
+}
+.Login-form{
+    position: absolute;
+    top: 200px;
+    right: 480px;
+    width: 500px;
+    height: 500px;
+    background-color:rebeccapurple;
+    margin-left: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    position: absolute;
+    & h1{
+        text-align: center;
+        margin-top: 10px;
+
+    }
+    .pswdl,
+    .email{
+        position: absolute;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+        color: #0c577d;
+        
+    }
+    .email{
+        margin-left: 20px;
+    }
+    .pswdl{
+        margin-top: 120px;
+    }
+    .submit,
+    .pswd,
+    .Email{
+        position: absolute;
+        font-size: 15px;
+        margin-left: 225px;
+        width: 220px;
+        height: 35px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(10px);
+        border:1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.8);
+        &::placeholder{
+            color: rgb(0, 0, 0);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        &::content{
+            font-size:1005px ;
+        }
+        &:focus{
+            box-shadow: 2 10px 25px 0 rgba(0, 0, 0, 0.9);
+        }
+
+        
+    }
+    .email{
+        margin-left: 60px;
+        font-style: italic;
+    }
+    .pswdl{
+        margin-left: 20px;
+        font-style: italic;
+    }
+    .pswd{
+        font-size: 20px;
+        margin-top: 120px;
+    }
+    .submit{
+        bottom: 100px;
+        right: 25%;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        letter-spacing: 4px;
+        &:hover{
+            background-color: #0c577d;
+            color: wheat;
+            box-shadow: 0 8px 20px 4px rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    .forgoted{
+        position: absolute;
+        bottom: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+        text-decoration: underline;
+        color: #000;
+        left: 30%;
+    }
+
+
 }
