@@ -1,5 +1,5 @@
 
-nav p{
+nav ul li{
     font-family: italic, 'Arial Narrow Bold', sans-serif;
     top: 0;
     margin-left:10% ;
@@ -541,34 +541,101 @@ h1{
 
 
 .RichDad-body{
-    background-color: purple;
+    position: relative;
+    background-color: rgb(122, 0, 0);
     min-height: 0;
     background-image: url("");
     min-height: 10000px;
     header{
-        .book-img{
+        .amazon , .elshrowk , .diwan{
+            position: absolute;
+            &:hover{
+                transition-duration: 0.4s;
+                font-size: 22px;
+            }
+            transition-duration:0.4s ;
+            background-color: rgb(66, 3, 129);
+            border-radius: 40px;
+            padding: 10px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            box-shadow: 6px 6px 20px 3px black;
+            font-weight: bold;
+            color: rgb(235, 3, 3);
+            text-decoration: none;
+            font-size: 20px;
+            top: 350px;
+            right: 750px;
+        }
+        .amazon{
+            display: flex;
+            right: 590px;
+            img{
+                margin-right: 10px;
+            }
+            text-align: center;
+        }
+        .diwan{
+            right: 240px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .elshrowk{
+            padding-top:15px ;
+            padding-bottom:15px ;
+            right: 400px;
+        }
+        .buy-now{
+            position: absolute;
+            color: rgb(31, 0, 62);
+
+            text-shadow: 5px 2px  #ff6c03;
+            right: 260px;
+            top: 120px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 20px;
+            font-weight: bold;
+            font-size: 100px;
+        }
+        
+        .img1{
             &:hover{
                 transition-duration: 0.3s;
-                height: 405px;
-                width: 305px;
-                box-shadow: 10px 10px 30px 6px black;
+                height: 610px;
+                width: 560px;
             }
+            
             transition-duration: 0.3s;
-            border-radius: 30px;
             position:absolute;
-            height: 400px;
-            width: 300px;
-            right: 550px;
-            box-shadow: 10px 10px 30px 2px black;
+            left: -80px;
         }
     }
     .contant{
-        .video{
-            margin-left: 300px;
-            left: 100px;
-            width: 700px;
+        display: flex;
+        position: absolute;
+        .img3{
+            position: absolute;
+            top: 300px;
+            right: 350px;
+
         }
-        z-index: -1;
+
+
+        .book-review{
+            position: absolute;
+            color: rgb(31, 0, 62);
+
+            text-shadow: 3.5px 1px  #ff6c03;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 20px;
+            font-weight: bold;
+            font-size: 70px;
+            top: 1100px;
+            left: 40px;
+        }
+
+        z-index: -10;
         height: 9000px;
         top: 200px;
         left: 40px;
@@ -590,13 +657,91 @@ h1{
         }
 
     }
-
+    .video{
+        z-index: 10;
+        position: absolute;
+        left: 400px;
+        top: 1450px;
+    }
+    .div-side{
+        position: absolute;
+        width: 50px;
+        height: 300px;
+        right: 0;
+        top: 300px;
+        &:hover{
+            .open-side{
+                transition-duration: 0.5s;
+                right:160px;
+            }
+            .side-bar{
+                transition-duration: 0.5s;
+                right: 0;
+            }
+        }
+    }
+    .open-side{
+        transition-duration: 0.5s;
+        box-shadow: 10px 10px 20px ;
+        position: fixed;
+        background-color: #0873a8;
+        height: 10px;
+        width: 10px;
+        padding: 30px;
+        rotate: 45deg;
+        right: -40px;
+        top: 400px;
+    }
+    .side-bar{
+        transition: 0.5s;
+        border-radius: 20px;
+        z-index: 1000;
+        position:fixed;
+        background-color:  rgb(122, 0, 0);
+        box-shadow: 10px 10px 30px 5px;
+        right: -200px;
+        top: 250px;
+        width: fit-content;
+        border-spacing: 1000px;
+        tr td{
+            border: 10px #0873a8;
+            color: white;
+            padding: 30px;
+            font-size: 25px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        tr td{
+            border-radius: 10px;
+        }
+    }
 
 
 }
+.book-reading{
+    position: absolute;
+    z-index: 10000;
+    top: 2100px;
+    left: 400px;
+}
+.be{
+    width: 560px;
+    height: 600px;
+    top: 1px;
+    position: absolute;
+    transition-duration: 0.3s;
 
-
-
+    left: 240px;
+    &:hover{
+        transition-duration: 0.3s;
+        width: 590px;
+        height: 630px;
+    }
+}
 
 
 
@@ -720,3 +865,28 @@ h1{
         background-color:rgb(250 100 0);
     }
 
+/* khaled csss*/
+
+nav ul li a {
+    color:black; 
+    text-decoration-line: none;
+    }
+    
+    nav ul li a {
+        color:black; 
+        text-decoration-line: none;
+        }
+        
+        .sub-menu-1{
+            display: none;
+        }
+        
+        nav ul .contact-list:hover {
+            &.sub-menu-1{ 
+                display: block;
+                margin-top: 15px;
+                margin-left: -15px;
+            }
+        
+        }
+    
