@@ -6,10 +6,23 @@
     <link rel="stylesheet" href="style.css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
+
 <body class="RichDad-body">
 <header>
+
+    <img class="dark-icon" id="icond" src="Icons/night.png" alt="">
+    <div class="dark-container">
+
+    </div>
+
+
     <h1 class="buy-now">Buy Now</h1>
     <a class="amazon" target="_blank" href="https://www.amazon.com/Rich-Dad-Poor-Teach-Middle/dp/1612680194">
         <img src="amazon.png" width="30px" >
@@ -26,7 +39,6 @@
 
 
 
-
 </div>
 <img src="/Booktobia/Books/be.png" alt="" class="be">
 <iframe class="video" width="1000" height="455" src="https://www.youtube.com/embed/Pp7WECKyGYw?si=t7gh1sYL4nUUp1b1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -38,7 +50,19 @@
 <div class="div-side">
 
 
+<script>
 
+    var icon = document.getElementById("icond");
+    
+    icon.onclick = function() {
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src="Icons/light2.png"
+        }else{
+            icon.src = "Icons/night.png"
+        }
+    }
+</script>
 
 
 
@@ -52,7 +76,7 @@
             
         </tr>
         <tr>
-            <td> <a href="">Home</a> </td>
+            <td> <a href="/Booktobia/index.html">Home</a> </td>
             
         <tr>
         <tr>
@@ -80,7 +104,16 @@
 
 
 
+<footer class="rich-dad-footer">
+<h2>This Page Made By:_ Eng. Ziad Ashraf _</h2>
+<a href="https://www.linkedin.com/in/ziad-ashraf-59a3772a4/" target="_blank">
+    <img src="linkedin.png" alt="" width="40">
+</a>
+<a href="https://github.com/ziad-ashraf7" target="_blank">
+    <img src="github-sign.png" alt="" width="40" style="position: absolute;left: 110px;">
+</a>
 
+</footer>
 
 
 
