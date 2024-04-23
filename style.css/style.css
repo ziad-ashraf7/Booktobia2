@@ -207,6 +207,7 @@ h1{
 }
 .Book4{
     right: 15px;
+    width: 1000px;
     top: 2250px;
     .novelimg{
         transition-duration:0.5s ;
@@ -233,9 +234,9 @@ h1{
         position: absolute;
     }
     h1{
-        font-size: 50px;
+        font-size: 40px;
         top: -20px;
-        left: 30px;
+        left: 10px;
     }
     .descibtion{
         top: 70px;
