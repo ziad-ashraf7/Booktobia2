@@ -16,13 +16,40 @@
         </h1>
         <form action="">
             <label for="Email" class="email"> Email </label>
-            <input type="email" class="Email" placeholder="Example@gmail.com" required>
+            <input type="email" id="l-email" class="Email" placeholder="Example@gmail.com" required>
             <label for="pswd" class="pswdl"> Password </label>
-            <input type="password" class="pswd" placeholder="Enter Password" style="font-size: smaller;" required>
-            <input type="submit" class="submit" value="Login">
+            <input type="password" id="l-psswd" class="pswd" placeholder="Enter Password" style="font-size: smaller;" required>
+            <input type="button" onclick="getData()" class="submit" value="Login">
             <a href="SginUP.html" class="forgoted">Forgot Password ? SignUP</a>
         </form>
     </div>
     
 </body>
+<script>
+    function getData(){
+        let email , password ;
+        email = document.getElementById("l-email").value;
+        password = document.getElementById("l-psswd").value;
+
+        let users_array = new Array();
+        users_array = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+        if(users_array.some((v) =>{
+            return v.email==email && v.password == password
+        }) ){
+            let this_user = users_array.filter((v) =>{
+                return v.email==email && v.password==password
+            })[0]
+            localStorage.setItem("name", this_user.name);
+            localStorage.setItem("email", this_user.email);
+            window.location.href = "after_Login.html";
+        }else{
+            alert("You Do not have account");
+        }
+
+
+
+
+
+    }
+</script>
 </html>
