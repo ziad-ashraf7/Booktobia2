@@ -854,7 +854,7 @@ h1{
     overflow: hidden;
 
     position: relative;
-    
+
 }
 .signup-body{
 background-image: url("../LoginWall.jpg");
@@ -881,7 +881,7 @@ min-height: 10px;
 .container {
     
     width: 400px;
-    height: 500px;
+    height: 550px;
     position: absolute;
     bottom: 140px;
     right: 510px;
@@ -1143,7 +1143,7 @@ nav ul li a {
         }
         .samy-body{
             
-            background-image: url(images/palm-tree.jpg);
+            background-image: url("/Booktobia/images/sea.png");
             background-repeat: no-repeat;
             font-family: sans-serif;
             margin: 0;
